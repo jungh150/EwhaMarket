@@ -1,5 +1,5 @@
 {% block section %}
-<form action="/submit_item" method="get">
+<form action="/submit_item_post" method="post">
     <div><br><br>
         <label for="name">Item name: </label>
         <input type="text" name="name" id="name" required><br><br>
@@ -38,10 +38,12 @@
     <br>
 <select id="status" name="status">
 <option value="new" selected>New</option> <option value="lnew">Likely New</option>
-<option value="used">Used</option> </select><br><br>
+<option value="used">Used</option> </select>
+    <br><br>
 </div> <div>
 <label for="phone">Phone : </label>
 <input type="text" name="phone" id="phone"><br><br> </div>
 <input type="submit" value="Submit!"><br><br> </div>
 </form>
 {% endblock section %}
+
